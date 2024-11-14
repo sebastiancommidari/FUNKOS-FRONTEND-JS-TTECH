@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Sour Gummy", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(75, 48, 139, 0.541);
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.sombreadoTitulos {
+    text-shadow: 
+    3px 3px 0px #000,
+    -1px -1px 0px #000, 
+    -1px 1px 0px #000, 
+    1px -1px 0px #000;
+}
+
+/* ESTILOS DEL HEADER */
+
+header {
+    background-color: rgba(75, 48, 139, 0.541);
+    font-size: 0.9em;
+    position: sticky;
+    top: 0;
+    z-index: 1005;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    flex-grow: 1;
+}
+
+header .logo-img {
+    width: auto;
+    height: 100px;
+}
+
+
+header nav {
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.3em;
+}
+
+
+
+
+/* ESTILOS DEL MAIN / INDEX */
+
+.principal {
+    padding-bottom: 50px;
+    background-image: url("../assets/img/fondo_principal.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 85vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 2.3em;
+    text-shadow: 
+        6px 6px 0px #000,
+        -1px -1px 0px #000, 
+        -1px 1px 0px #000, 
+        1px -1px 0px #000; 
+}
+
+.principal h1{
+    font-size: 6vw;
+    padding-top: 80px;
+}
+
+
+
+.contenedorTextoPrincipalIndex {
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 8px solid rgba(75, 48, 139, 0.541);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    font-size: 2.5vw;
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(15px);   
+}
+
+.contenedorTextoPrincipalIndex p {
+    font-size: 2vw;
+}
+
+.contenedorTextoPrincipalIndex a {
+    display: inline-block;
+    background-color: #e7b049;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.228);
+}
+
+/* SECTION ULTIMOS INGRESOS*/
+
+.ultimos-ingresos {
+    text-align: center;
+    padding: 2rem;
+}
+
+.galeriaProductos {
+    align-items: center;
+}
+
+
+
+/* SECTION NOTICIAS */
+
+.novedades {
+    padding: 2rem;
+}
+
+.articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 40%;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    color: #510d1b;
+}
+
+article p {
+    font-size: 1rem;
+    color: #333;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #510d1b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+/* FOOTERS GENERAL */
+
+footer{
+    background-color: rgba(75, 48, 139, 0.541);
+    padding-bottom: 0.6rem;
+    padding-top: 0.5rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+footer .redes-sociales {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0.5rem;
+}
+
+footer .redes-sociales a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .redes-sociales a:hover {
+    color: #e7b049;
+}
+
+footer p{
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+/* PAGINA DE PRODUCTOS Y REUTILIZADO EN SECTION DE INGRESOS DEL INDEX*/
+
+
+.productos {
+    padding: 20px;
+}
+
+.galeriaProductos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjetaProducto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.tarjetaProducto img {
+    max-width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    object-fit: cover;
+}
+
+.tarjetaProducto h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.tarjetaProducto h4 {
+    font-size: 1.1rem;
+    color: #510d1b;
+}
+
+.tarjetaProducto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #510d1b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tarjetaProducto a:hover {
+    background-color: #333;
+}
+
+
+/* PAGINA DE CONTACTO */
+
+.contacto {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contacto label {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contacto button {
+    padding: 10px 15px;
+    background-color: #510d1b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: #333;
+}
+
+
+/* MeEDIA QUERIES PARA PANTALLAS MAS PEQUEÑAS */
+
+@media (max-width: 600px) {
+
+    .principal h1{
+        font-size: 12vw;
+        padding-top: 50px;
+    }
+
+    header .logo-img {
+        width: auto;
+        height: 50px;
+    }
+
+    header nav ul li a {
+        font-size: 1.3em;
+        text-shadow: 
+        2px 2px 0px #000,
+        -1px -1px 0px #000, 
+        -1px 1px 0px #000, 
+        1px -1px 0px #000; 
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    .contenedorTextoPrincipalIndex p {
+        font-size: 6vw;
+    }
+    
+    .contenedorTextoPrincipalIndex a {
+        font-size: 6vw;
+    }
+    
+    article {
+        width: 100%;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .principal h1{
+        font-size: 10vw;
+        padding-top: 50px;
+    }
+}
