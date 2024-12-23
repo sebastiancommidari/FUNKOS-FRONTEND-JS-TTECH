@@ -52,11 +52,11 @@ header .logo-img {
 
 .navbar-nav .nav-link {
     font-size: 1.6em;
-    color: #ffffff !important; /* Forzar color blanco en los enlaces del navbar */
+    color: #ffffff !important;
 }
 
 .navbar-light .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.1); /* Estilo del botón toggle */
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -228,7 +228,7 @@ footer{
 
 
 footer .redes-sociales a {
-    color: #fff !important;  /* Forzar el color blanco en los iconos del footer */
+    color: #fff !important;
     margin: 0 10px;
     font-size: 1.5rem;
     transition: color 0.3s;
@@ -245,11 +245,10 @@ footer p {
     font-size: 1rem;
 }
 
-/* Reestablecer el color de fondo para las secciones de productos y noticias */
 .productosDestacados,
 .productos,
 .contacto {
-    background-color: rgba(75, 48, 139, 0.541); /* Restaurar el color de fondo */
+    background-color: rgba(75, 48, 139, 0.541);
 }
 
 /* PAGINA DE PRODUCTOS Y REUTILIZADO EN SECTION DE INGRESOS DEL INDEX*/
