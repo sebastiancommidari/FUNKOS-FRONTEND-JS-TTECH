@@ -6,21 +6,31 @@
     <title>Inicio - FUNKOS LOKOS</title>
     <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo"> <img src="assets/img/FUNKOS_LOKOS.png" alt="Funkos Lokos Logo" class="logo-img"> </div>
-            <ul class="sombreadoTitulos">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/productos.html">Productos</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-                <li><a href="pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/FUNKOS_LOKOS.png" alt="Funkos Lokos Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto sombreadoTitulos">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
+    <main class="indice">
         <section class="principal">
             <h1>Bienvenidos a FUNKOS LOKOS</h1>
             <div class="contenedorTextoPrincipalIndex sombreadoTitulos">
@@ -35,31 +45,31 @@
                     <img src="assets/img/goku.webp" alt="figura de goku">
                     <h3>Goku</h3>
                     <h4>$60.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Goku" data-precio="60000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="assets/img/MESSI_FUNKO.png" alt="figura de Messi">
                     <h3>Lio Messi</h3>
                     <h4>$100.000</h4>
-                    <a href="#">Agregar al carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Lio Messi" data-precio="100000">Agregar al carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="assets/img/totuga_ninja.webp" alt="figura retro de tortuga ninja">
-                    <h3>Leonardo - TMNT</h3>
+                    <h3>Leonardo - TMNT</h4>
                     <h4>$30.000</h4>
-                    <a href="#">Agregar al carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Leonardo - TMNT" data-precio="30000">Agregar al carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="assets/img/chewb.jpg" alt="figura de chewbaca">
                     <h3>Chewbaca</h3>
                     <h4>$80.000</h4>
-                    <a href="#">Agregar al carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Chewbaca" data-precio="80000">Agregar al carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="assets/img/superman.jpg" alt="figura de superman">
                     <h3>Superman</h3>
                     <h4>$45.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Superman" data-precio="45000">Agregar al Carrito</a>
                 </div>
             </div>
         </section>
@@ -76,19 +86,24 @@
                     <img src="assets/img/cuidado_wiki.jpeg" alt="guia de cuidado de figuras">
                     <h3>Cuida tu colección</h3>
                     <p>Informate como hacerlo con esta guía con los mejores consejos para mantener tus figuras en perfecto estado.</p>
-                    <a href="https://es.wikihow.com/cuidar-una-colecci%C3%B3n-de-figuras-de-acci%C3%B3n" target="_blank">Ver más...</a>
+                    <a href="https://es.wikihow.com/cuidar-una-colección-de-figuras-de-acción" target="_blank">Ver más...</a>
                 </article>
             </div>
         </section>
     </main>
     <footer>
-        <div class="redes-sociales sombreadoTitulos">
-            <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://x.com/"><i class="fa-brands fa-x"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        <div class="container text-center sombreadoTitulos redes-sociales">
+            <a href="https://es-la.facebook.com/" class="mx-2"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/" class="mx-2"><i class="fa-brands fa-x"></i></a>
+            <a href="https://www.instagram.com/" class="mx-2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" class="mx-2"><i class="fa-brands fa-youtube"></i></a>
+            <p><b>&copy; 2024 FUNKOS LOKOS | Todos los derechos reservados.</b></p>
         </div>
-        <p class="sombreadoTitulos"><b>&copy; 2024 FUNKOS LOKOS | Todos los derechos reservados.</b></p>
     </footer>
+    <!-- Incluir los scripts necesarios de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlZWPcJ14swc8RJTv2Np9OUzv6Xf3B1wo8r07edjddG1sD+OqxXrPFF3GRm" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgICzrrS6rYFb4y4K5Eda6lRSFa0a5mr4jD+PewP3ftElzFaSu" crossorigin="anonymous"></script>
+    <script src="js/agregar_carrito.js"></script>
 </body>
 </html>

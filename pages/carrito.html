@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - FUNKOS LOKOS</title>
+    <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico">
+</head>
+<body class="carritoBody">
+    <header class="prodNav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/FUNKOS_LOKOS.png" alt="Funkos Lokos Logo" class="logo-img">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto sombreadoTitulos">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container py-5 carro">
+        <h1 class="text-center sombreadoTitulos mb-4">Carrito de Productos</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCarrito">
+                <!-- Filas dinámicas -->
+            </tbody>
+        </table>
+        <div class="mt-3">
+            <h3>Total: $<span id="totalCarrito">0.00</span></h3>
+        </div>
+    </main>
+    <footer>
+        <div class="container text-center sombreadoTitulos redes-sociales">
+            <a href="https://es-la.facebook.com/" class="mx-2"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/" class="mx-2"><i class="fa-brands fa-x"></i></a>
+            <a href="https://www.instagram.com/" class="mx-2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" class="mx-2"><i class="fa-brands fa-youtube"></i></a>
+            <p><b>&copy; 2024 FUNKOS LOKOS | Todos los derechos reservados.</b></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlZWPcJ14swc8RJTv2Np9OUzv6Xf3B1wo8r07edjddG1sD+OqxXrPFF3GRm" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgICzrrS6rYFb4y4K5Eda6lRSFa0a5mr4jD+PewP3ftElzFaSu" crossorigin="anonymous"></script>
+    <script src="../js/mostrar_carrito.js"></script>
+</body>
+</html>

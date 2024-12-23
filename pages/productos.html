@@ -1,140 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - FUNKOS LOKOS</title>
     <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="../favicon.ico">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="logo"> <img src="../assets/img/FUNKOS_LOKOS.png" alt="Funkos Lokos Logo" class="logo-img">
+    <header class="prodNav">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/FUNKOS_LOKOS.png" alt="Funkos Lokos Logo" class="logo-img">
+                </a>
             </div>
-            <ul class="sombreadoTitulos">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto sombreadoTitulos">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
+    <main class="prods">
         <section class="productos">
-            <h2 class="sombreadoTitulos">Que difícil elegir solo uno... </h2>
+            <h2 class="sombreadoTitulos">Que difícil elegir solo uno...</h2>
             <div class="galeriaProductos">
                 <div class="tarjetaProducto">
                     <img src="../assets/img/batman.webp" alt="figura de batman">
                     <h3>Batman</h3>
                     <h4>$60.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Batman" data-precio="60000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/darth.jpg" alt="figura de darth vader">
                     <h3>Darth Vader</h3>
                     <h4>$50.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Darth Vader" data-precio="50000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/superman.jpg" alt="figura de superman">
                     <h3>Superman</h3>
                     <h4>$45.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Superman" data-precio="45000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
-                    <img src="../assets/img/stormtrooper.webp" alt="figura de star wars">
+                    <img src="../assets/img/stormtrooper.webp" alt="figura de stormtrooper">
                     <h3>Stormtrooper</h3>
                     <h4>$50.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Stormtrooper" data-precio="50000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/goro.jpg" alt="figura de goro">
                     <h3>Goro</h3>
                     <h4>$60.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Goro" data-precio="60000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/c3po.jpg" alt="figura de c3po">
                     <h3>C3PO</h3>
                     <h4>$50.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="C3PO" data-precio="50000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/wonder.png" alt="figura de wonderwoman">
                     <h3>Mujer Maravilla</h3>
                     <h4>$55.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Mujer Maravilla" data-precio="55000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/vegeta.webp" alt="figura de vegeta">
                     <h3>Vegeta</h3>
                     <h4>$50.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Vegeta" data-precio="50000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/joker.jpg" alt="figura del joker">
                     <h3>Joker</h3>
                     <h4>$45.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Joker" data-precio="45000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/goku.webp" alt="figura de goku">
                     <h3>Goku</h3>
                     <h4>$60.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Goku" data-precio="60000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/scorpion.jpg" alt="figura de scorpion">
                     <h3>Scorpion</h3>
                     <h4>$70.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Scorpion" data-precio="70000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/freezer.jpg" alt="figura de freezer">
                     <h3>Freezer</h3>
                     <h4>$55.000</h4>
-                    <a href="#">Agregar al Carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Freezer" data-precio="55000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/subzero.webp" alt="figura de subzero">
                     <h3>SubZero</h3>
                     <h4>$50.000</h4>
-                    <a href="#">Agregar al carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="SubZero" data-precio="50000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/MESSI_FUNKO.png" alt="figura de Messi">
                     <h3>Lio Messi</h3>
                     <h4>$100.000</h4>
-                    <a href="#">Agregar al carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Lio Messi" data-precio="100000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/totuga_ninja.webp" alt="figura retro de tortuga ninja">
                     <h3>Leonardo - TMNT</h3>
                     <h4>$30.000</h4>
-                    <a href="#">Agregar al carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Leonardo - TMNT" data-precio="30000">Agregar al Carrito</a>
                 </div>
                 <div class="tarjetaProducto">
                     <img src="../assets/img/chewb.jpg" alt="figura de chewbaca">
                     <h3>Chewbaca</h3>
                     <h4>$80.000</h4>
-                    <a href="#">Agregar al carrito</a>
+                    <a href="#" class="btn-agregar" data-nombre="Chewbaca" data-precio="80000">Agregar al Carrito</a>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="redes-sociales sombreadoTitulos">
-            <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://x.com/"><i class="fa-brands fa-x"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        <div class="container text-center sombreadoTitulos redes-sociales">
+            <a href="https://es-la.facebook.com/" class="mx-2 "><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/" class="mx-2"><i class="fa-brands fa-x"></i></a>
+            <a href="https://www.instagram.com/" class="mx-2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" class="mx-2"><i class="fa-brands fa-youtube"></i></a>
+            <p><b>&copy; 2024 FUNKOS LOKOS | Todos los derechos reservados.</b></p>
         </div>
-        <p class="sombreadoTitulos"><b>&copy; 2024 FUNKOS LOKOS | Todos los derechos reservados.</b></p>
     </footer>
+    <script src="../js/agregar_carrito.js"></script>
 </body>
-
 </html>
